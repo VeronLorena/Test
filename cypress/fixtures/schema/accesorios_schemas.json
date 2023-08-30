@@ -1,0 +1,2239 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "type": "object",
+    "required": [
+        "pageProps",
+        "__N_SSP"
+    ],
+    "properties": {
+        "pageProps": {
+            "type": "object",
+            "required": [
+                "path",
+                "fields",
+                "error",
+                "env"
+            ],
+            "properties": {
+                "path": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "object",
+                    "required": [
+                        "nombre",
+                        "title",
+                        "route",
+                        "mask",
+                        "description",
+                        "navColor",
+                        "accentColor",
+                        "header",
+                        "content",
+                        "footer",
+                        "sectionName",
+                        "chatConfig"
+                    ],
+                    "properties": {
+                        "nombre": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "route": {
+                            "type": "string"
+                        },
+                        "mask": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "navColor": {
+                            "type": "string"
+                        },
+                        "accentColor": {
+                            "type": "string"
+                        },
+                        "header": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "metadata",
+                                    "sys",
+                                    "fields"
+                                ],
+                                "properties": {
+                                    "metadata": {
+                                        "type": "object",
+                                        "required": [
+                                            "tags"
+                                        ],
+                                        "properties": {
+                                            "tags": {
+                                                "type": "array",
+                                                "items": {}
+                                            }
+                                        }
+                                    },
+                                    "sys": {
+                                        "type": "object",
+                                        "required": [
+                                            "space",
+                                            "id",
+                                            "type",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "environment",
+                                            "revision",
+                                            "contentType",
+                                            "locale"
+                                        ],
+                                        "properties": {
+                                            "space": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "type": "string"
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "environment": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "id",
+                                                            "type",
+                                                            "linkType"
+                                                        ],
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "revision": {
+                                                "type": "integer"
+                                            },
+                                            "contentType": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "locale": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "fields": {
+                                        "type": "object",
+                                        "required": [
+                                            "title",
+                                            "links",
+                                            "drawer",
+                                            "itemsCount",
+                                            "linkPlp",
+                                            "linkPdp",
+                                            "displaySearch"
+                                        ],
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "links": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "metadata",
+                                                        "sys",
+                                                        "fields"
+                                                    ],
+                                                    "properties": {
+                                                        "metadata": {
+                                                            "type": "object",
+                                                            "required": [
+                                                                "tags"
+                                                            ],
+                                                            "properties": {
+                                                                "tags": {
+                                                                    "type": "array",
+                                                                    "items": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "sys": {
+                                                            "type": "object",
+                                                            "required": [
+                                                                "space",
+                                                                "id",
+                                                                "type",
+                                                                "createdAt",
+                                                                "updatedAt",
+                                                                "environment",
+                                                                "revision",
+                                                                "contentType",
+                                                                "locale"
+                                                            ],
+                                                            "properties": {
+                                                                "space": {
+                                                                    "type": "object",
+                                                                    "required": [
+                                                                        "sys"
+                                                                    ],
+                                                                    "properties": {
+                                                                        "sys": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "type",
+                                                                                "linkType",
+                                                                                "id"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "linkType": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "id": {
+                                                                    "type": "string"
+                                                                },
+                                                                "type": {
+                                                                    "type": "string"
+                                                                },
+                                                                "createdAt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "updatedAt": {
+                                                                    "type": "string"
+                                                                },
+                                                                "environment": {
+                                                                    "type": "object",
+                                                                    "required": [
+                                                                        "sys"
+                                                                    ],
+                                                                    "properties": {
+                                                                        "sys": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "id",
+                                                                                "type",
+                                                                                "linkType"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "linkType": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "revision": {
+                                                                    "type": "integer"
+                                                                },
+                                                                "contentType": {
+                                                                    "type": "object",
+                                                                    "required": [
+                                                                        "sys"
+                                                                    ],
+                                                                    "properties": {
+                                                                        "sys": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "type",
+                                                                                "linkType",
+                                                                                "id"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "linkType": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "locale": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        },
+                                                        "fields": {
+                                                            "type": "object",
+                                                            "required": [
+                                                                "titulo",
+                                                                "name",
+                                                                "link"
+                                                            ],
+                                                            "properties": {
+                                                                "titulo": {
+                                                                    "type": "string"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string"
+                                                                },
+                                                                "link": {
+                                                                    "type": "string"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "drawer": {
+                                                "type": "object",
+                                                "required": [
+                                                    "metadata",
+                                                    "sys",
+                                                    "fields"
+                                                ],
+                                                "properties": {
+                                                    "metadata": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "tags"
+                                                        ],
+                                                        "properties": {
+                                                            "tags": {
+                                                                "type": "array",
+                                                                "items": {}
+                                                            }
+                                                        }
+                                                    },
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "space",
+                                                            "id",
+                                                            "type",
+                                                            "createdAt",
+                                                            "updatedAt",
+                                                            "environment",
+                                                            "revision",
+                                                            "contentType",
+                                                            "locale"
+                                                        ],
+                                                        "properties": {
+                                                            "space": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "sys"
+                                                                ],
+                                                                "properties": {
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "type",
+                                                                            "linkType",
+                                                                            "id"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "linkType": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "createdAt": {
+                                                                "type": "string"
+                                                            },
+                                                            "updatedAt": {
+                                                                "type": "string"
+                                                            },
+                                                            "environment": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "sys"
+                                                                ],
+                                                                "properties": {
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "id",
+                                                                            "type",
+                                                                            "linkType"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "linkType": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "revision": {
+                                                                "type": "integer"
+                                                            },
+                                                            "contentType": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "sys"
+                                                                ],
+                                                                "properties": {
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "type",
+                                                                            "linkType",
+                                                                            "id"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "linkType": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "locale": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "fields": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "title",
+                                                            "iconoRegistro",
+                                                            "logoBentoBox",
+                                                            "bentobox",
+                                                            "categorias"
+                                                        ],
+                                                        "properties": {
+                                                            "title": {
+                                                                "type": "string"
+                                                            },
+                                                            "iconoRegistro": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "metadata",
+                                                                    "sys",
+                                                                    "fields"
+                                                                ],
+                                                                "properties": {
+                                                                    "metadata": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "tags"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "tags": {
+                                                                                "type": "array",
+                                                                                "items": {}
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "space",
+                                                                            "id",
+                                                                            "type",
+                                                                            "createdAt",
+                                                                            "updatedAt",
+                                                                            "environment",
+                                                                            "revision",
+                                                                            "locale"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "space": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "sys"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "sys": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "type",
+                                                                                            "linkType",
+                                                                                            "id"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "type": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "linkType": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "id": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "createdAt": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "updatedAt": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "environment": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "sys"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "sys": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "id",
+                                                                                            "type",
+                                                                                            "linkType"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "id": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "type": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "linkType": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "revision": {
+                                                                                "type": "integer"
+                                                                            },
+                                                                            "locale": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "fields": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "title",
+                                                                            "file"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "title": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "file": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "url",
+                                                                                    "details",
+                                                                                    "fileName",
+                                                                                    "contentType"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "url": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "details": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "size",
+                                                                                            "image"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "size": {
+                                                                                                "type": "integer"
+                                                                                            },
+                                                                                            "image": {
+                                                                                                "type": "object",
+                                                                                                "required": [
+                                                                                                    "width",
+                                                                                                    "height"
+                                                                                                ],
+                                                                                                "properties": {
+                                                                                                    "width": {
+                                                                                                        "type": "integer"
+                                                                                                    },
+                                                                                                    "height": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "fileName": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "contentType": {
+                                                                                        "type": "string"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "logoBentoBox": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "metadata",
+                                                                    "sys",
+                                                                    "fields"
+                                                                ],
+                                                                "properties": {
+                                                                    "metadata": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "tags"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "tags": {
+                                                                                "type": "array",
+                                                                                "items": {}
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "space",
+                                                                            "id",
+                                                                            "type",
+                                                                            "createdAt",
+                                                                            "updatedAt",
+                                                                            "environment",
+                                                                            "revision",
+                                                                            "locale"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "space": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "sys"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "sys": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "type",
+                                                                                            "linkType",
+                                                                                            "id"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "type": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "linkType": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "id": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "createdAt": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "updatedAt": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "environment": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "sys"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "sys": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "id",
+                                                                                            "type",
+                                                                                            "linkType"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "id": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "type": {
+                                                                                                "type": "string"
+                                                                                            },
+                                                                                            "linkType": {
+                                                                                                "type": "string"
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "revision": {
+                                                                                "type": "integer"
+                                                                            },
+                                                                            "locale": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "fields": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "title",
+                                                                            "file"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "title": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "file": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "url",
+                                                                                    "details",
+                                                                                    "fileName",
+                                                                                    "contentType"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "url": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "details": {
+                                                                                        "type": "object",
+                                                                                        "required": [
+                                                                                            "size",
+                                                                                            "image"
+                                                                                        ],
+                                                                                        "properties": {
+                                                                                            "size": {
+                                                                                                "type": "integer"
+                                                                                            },
+                                                                                            "image": {
+                                                                                                "type": "object",
+                                                                                                "required": [
+                                                                                                    "width",
+                                                                                                    "height"
+                                                                                                ],
+                                                                                                "properties": {
+                                                                                                    "width": {
+                                                                                                        "type": "integer"
+                                                                                                    },
+                                                                                                    "height": {
+                                                                                                        "type": "integer"
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "fileName": {
+                                                                                        "type": "string"
+                                                                                    },
+                                                                                    "contentType": {
+                                                                                        "type": "string"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "bentobox": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "object",
+                                                                    "required": [
+                                                                        "metadata",
+                                                                        "sys",
+                                                                        "fields"
+                                                                    ],
+                                                                    "properties": {
+                                                                        "metadata": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "tags"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "tags": {
+                                                                                    "type": "array",
+                                                                                    "items": {}
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "sys": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "space",
+                                                                                "id",
+                                                                                "type",
+                                                                                "createdAt",
+                                                                                "updatedAt",
+                                                                                "environment",
+                                                                                "revision",
+                                                                                "contentType",
+                                                                                "locale"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "space": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "type",
+                                                                                                "linkType",
+                                                                                                "id"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "createdAt": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "updatedAt": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "environment": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "id",
+                                                                                                "type",
+                                                                                                "linkType"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "revision": {
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "contentType": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "type",
+                                                                                                "linkType",
+                                                                                                "id"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "locale": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "fields": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "imagen",
+                                                                                "link",
+                                                                                "texto"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "imagen": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "metadata",
+                                                                                        "sys",
+                                                                                        "fields"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "metadata": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "tags"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "tags": {
+                                                                                                    "type": "array",
+                                                                                                    "items": {}
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "space",
+                                                                                                "id",
+                                                                                                "type",
+                                                                                                "createdAt",
+                                                                                                "updatedAt",
+                                                                                                "environment",
+                                                                                                "revision",
+                                                                                                "locale"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "space": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "sys"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "sys": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "type",
+                                                                                                                "linkType",
+                                                                                                                "id"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "type": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "linkType": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "id": {
+                                                                                                                    "type": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "createdAt": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "updatedAt": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "environment": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "sys"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "sys": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "id",
+                                                                                                                "type",
+                                                                                                                "linkType"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "id": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "type": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "linkType": {
+                                                                                                                    "type": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "revision": {
+                                                                                                    "type": "integer"
+                                                                                                },
+                                                                                                "locale": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "fields": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "title",
+                                                                                                "file"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "title": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "file": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "url",
+                                                                                                        "details",
+                                                                                                        "fileName",
+                                                                                                        "contentType"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "url": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "details": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "size",
+                                                                                                                "image"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "size": {
+                                                                                                                    "type": "integer"
+                                                                                                                },
+                                                                                                                "image": {
+                                                                                                                    "type": "object",
+                                                                                                                    "required": [
+                                                                                                                        "width",
+                                                                                                                        "height"
+                                                                                                                    ],
+                                                                                                                    "properties": {
+                                                                                                                        "width": {
+                                                                                                                            "type": "integer"
+                                                                                                                        },
+                                                                                                                        "height": {
+                                                                                                                            "type": "integer"
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "fileName": {
+                                                                                                            "type": "string"
+                                                                                                        },
+                                                                                                        "contentType": {
+                                                                                                            "type": "string"
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "link": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "metadata",
+                                                                                        "sys",
+                                                                                        "fields"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "metadata": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "tags"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "tags": {
+                                                                                                    "type": "array",
+                                                                                                    "items": {}
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "space",
+                                                                                                "id",
+                                                                                                "type",
+                                                                                                "createdAt",
+                                                                                                "updatedAt",
+                                                                                                "environment",
+                                                                                                "revision",
+                                                                                                "contentType",
+                                                                                                "locale"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "space": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "sys"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "sys": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "type",
+                                                                                                                "linkType",
+                                                                                                                "id"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "type": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "linkType": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "id": {
+                                                                                                                    "type": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "createdAt": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "updatedAt": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "environment": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "sys"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "sys": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "id",
+                                                                                                                "type",
+                                                                                                                "linkType"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "id": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "type": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "linkType": {
+                                                                                                                    "type": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "revision": {
+                                                                                                    "type": "integer"
+                                                                                                },
+                                                                                                "contentType": {
+                                                                                                    "type": "object",
+                                                                                                    "required": [
+                                                                                                        "sys"
+                                                                                                    ],
+                                                                                                    "properties": {
+                                                                                                        "sys": {
+                                                                                                            "type": "object",
+                                                                                                            "required": [
+                                                                                                                "type",
+                                                                                                                "linkType",
+                                                                                                                "id"
+                                                                                                            ],
+                                                                                                            "properties": {
+                                                                                                                "type": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "linkType": {
+                                                                                                                    "type": "string"
+                                                                                                                },
+                                                                                                                "id": {
+                                                                                                                    "type": "string"
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                "locale": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "fields": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "name",
+                                                                                                "text",
+                                                                                                "url"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "name": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "text": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "url": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "texto": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "categorias": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "object",
+                                                                    "required": [
+                                                                        "metadata",
+                                                                        "sys",
+                                                                        "fields"
+                                                                    ],
+                                                                    "properties": {
+                                                                        "metadata": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "tags"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "tags": {
+                                                                                    "type": "array",
+                                                                                    "items": {}
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "sys": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "space",
+                                                                                "id",
+                                                                                "type",
+                                                                                "createdAt",
+                                                                                "updatedAt",
+                                                                                "environment",
+                                                                                "revision",
+                                                                                "contentType",
+                                                                                "locale"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "space": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "type",
+                                                                                                "linkType",
+                                                                                                "id"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "id": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "type": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "createdAt": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "updatedAt": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "environment": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "id",
+                                                                                                "type",
+                                                                                                "linkType"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "revision": {
+                                                                                    "type": "integer"
+                                                                                },
+                                                                                "contentType": {
+                                                                                    "type": "object",
+                                                                                    "required": [
+                                                                                        "sys"
+                                                                                    ],
+                                                                                    "properties": {
+                                                                                        "sys": {
+                                                                                            "type": "object",
+                                                                                            "required": [
+                                                                                                "type",
+                                                                                                "linkType",
+                                                                                                "id"
+                                                                                            ],
+                                                                                            "properties": {
+                                                                                                "type": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "linkType": {
+                                                                                                    "type": "string"
+                                                                                                },
+                                                                                                "id": {
+                                                                                                    "type": "string"
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "locale": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "fields": {
+                                                                            "type": "object",
+                                                                            "required": [
+                                                                                "nombre",
+                                                                                "title",
+                                                                                "link"
+                                                                            ],
+                                                                            "properties": {
+                                                                                "nombre": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "title": {
+                                                                                    "type": "string"
+                                                                                },
+                                                                                "link": {
+                                                                                    "type": "string"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "itemsCount": {
+                                                "type": "integer"
+                                            },
+                                            "linkPlp": {
+                                                "type": "string"
+                                            },
+                                            "linkPdp": {
+                                                "type": "string"
+                                            },
+                                            "displaySearch": {
+                                                "type": "boolean"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "content": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "metadata",
+                                    "sys",
+                                    "fields"
+                                ],
+                                "properties": {
+                                    "metadata": {
+                                        "type": "object",
+                                        "required": [
+                                            "tags"
+                                        ],
+                                        "properties": {
+                                            "tags": {
+                                                "type": "array",
+                                                "items": {}
+                                            }
+                                        }
+                                    },
+                                    "sys": {
+                                        "type": "object",
+                                        "required": [
+                                            "space",
+                                            "id",
+                                            "type",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "environment",
+                                            "revision",
+                                            "contentType",
+                                            "locale"
+                                        ],
+                                        "properties": {
+                                            "space": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "type": "string"
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "environment": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "id",
+                                                            "type",
+                                                            "linkType"
+                                                        ],
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "revision": {
+                                                "type": "integer"
+                                            },
+                                            "contentType": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "locale": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "fields": {
+                                        "type": "object",
+                                        "required": [
+                                            "name"
+                                        ],
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "footer": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "metadata",
+                                    "sys",
+                                    "fields"
+                                ],
+                                "properties": {
+                                    "metadata": {
+                                        "type": "object",
+                                        "required": [
+                                            "tags"
+                                        ],
+                                        "properties": {
+                                            "tags": {
+                                                "type": "array",
+                                                "items": {}
+                                            }
+                                        }
+                                    },
+                                    "sys": {
+                                        "type": "object",
+                                        "required": [
+                                            "space",
+                                            "id",
+                                            "type",
+                                            "createdAt",
+                                            "updatedAt",
+                                            "environment",
+                                            "revision",
+                                            "contentType",
+                                            "locale"
+                                        ],
+                                        "properties": {
+                                            "space": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "type": "string"
+                                            },
+                                            "createdAt": {
+                                                "type": "string"
+                                            },
+                                            "updatedAt": {
+                                                "type": "string"
+                                            },
+                                            "environment": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "id",
+                                                            "type",
+                                                            "linkType"
+                                                        ],
+                                                        "properties": {
+                                                            "id": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "revision": {
+                                                "type": "integer"
+                                            },
+                                            "contentType": {
+                                                "type": "object",
+                                                "required": [
+                                                    "sys"
+                                                ],
+                                                "properties": {
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "type",
+                                                            "linkType",
+                                                            "id"
+                                                        ],
+                                                        "properties": {
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "linkType": {
+                                                                "type": "string"
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "locale": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "fields": {
+                                        "type": "object",
+                                        "required": [
+                                            "title",
+                                            "derechosTexto",
+                                            "legalTexto",
+                                            "legalLink",
+                                            "codeQr",
+                                            "codeQrLink"
+                                        ],
+                                        "properties": {
+                                            "title": {
+                                                "type": "string"
+                                            },
+                                            "derechosTexto": {
+                                                "type": "string"
+                                            },
+                                            "legalTexto": {
+                                                "type": "string"
+                                            },
+                                            "legalLink": {
+                                                "type": "string"
+                                            },
+                                            "codeQr": {
+                                                "type": "object",
+                                                "required": [
+                                                    "metadata",
+                                                    "sys",
+                                                    "fields"
+                                                ],
+                                                "properties": {
+                                                    "metadata": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "tags"
+                                                        ],
+                                                        "properties": {
+                                                            "tags": {
+                                                                "type": "array",
+                                                                "items": {}
+                                                            }
+                                                        }
+                                                    },
+                                                    "sys": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "space",
+                                                            "id",
+                                                            "type",
+                                                            "createdAt",
+                                                            "updatedAt",
+                                                            "environment",
+                                                            "revision",
+                                                            "locale"
+                                                        ],
+                                                        "properties": {
+                                                            "space": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "sys"
+                                                                ],
+                                                                "properties": {
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "type",
+                                                                            "linkType",
+                                                                            "id"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "linkType": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "id": {
+                                                                "type": "string"
+                                                            },
+                                                            "type": {
+                                                                "type": "string"
+                                                            },
+                                                            "createdAt": {
+                                                                "type": "string"
+                                                            },
+                                                            "updatedAt": {
+                                                                "type": "string"
+                                                            },
+                                                            "environment": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "sys"
+                                                                ],
+                                                                "properties": {
+                                                                    "sys": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "id",
+                                                                            "type",
+                                                                            "linkType"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "id": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "type": {
+                                                                                "type": "string"
+                                                                            },
+                                                                            "linkType": {
+                                                                                "type": "string"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "revision": {
+                                                                "type": "integer"
+                                                            },
+                                                            "locale": {
+                                                                "type": "string"
+                                                            }
+                                                        }
+                                                    },
+                                                    "fields": {
+                                                        "type": "object",
+                                                        "required": [
+                                                            "title",
+                                                            "file"
+                                                        ],
+                                                        "properties": {
+                                                            "title": {
+                                                                "type": "string"
+                                                            },
+                                                            "file": {
+                                                                "type": "object",
+                                                                "required": [
+                                                                    "url",
+                                                                    "details",
+                                                                    "fileName",
+                                                                    "contentType"
+                                                                ],
+                                                                "properties": {
+                                                                    "url": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "details": {
+                                                                        "type": "object",
+                                                                        "required": [
+                                                                            "size",
+                                                                            "image"
+                                                                        ],
+                                                                        "properties": {
+                                                                            "size": {
+                                                                                "type": "integer"
+                                                                            },
+                                                                            "image": {
+                                                                                "type": "object",
+                                                                                "required": [
+                                                                                    "width",
+                                                                                    "height"
+                                                                                ],
+                                                                                "properties": {
+                                                                                    "width": {
+                                                                                        "type": "integer"
+                                                                                    },
+                                                                                    "height": {
+                                                                                        "type": "integer"
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "fileName": {
+                                                                        "type": "string"
+                                                                    },
+                                                                    "contentType": {
+                                                                        "type": "string"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "codeQrLink": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "sectionName": {
+                            "type": "string"
+                        },
+                        "chatConfig": {
+                            "type": "object",
+                            "required": [
+                                "metadata",
+                                "sys",
+                                "fields"
+                            ],
+                            "properties": {
+                                "metadata": {
+                                    "type": "object",
+                                    "required": [
+                                        "tags"
+                                    ],
+                                    "properties": {
+                                        "tags": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    }
+                                },
+                                "sys": {
+                                    "type": "object",
+                                    "required": [
+                                        "space",
+                                        "id",
+                                        "type",
+                                        "createdAt",
+                                        "updatedAt",
+                                        "environment",
+                                        "revision",
+                                        "contentType",
+                                        "locale"
+                                    ],
+                                    "properties": {
+                                        "space": {
+                                            "type": "object",
+                                            "required": [
+                                                "sys"
+                                            ],
+                                            "properties": {
+                                                "sys": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "type",
+                                                        "linkType",
+                                                        "id"
+                                                    ],
+                                                    "properties": {
+                                                        "type": {
+                                                            "type": "string"
+                                                        },
+                                                        "linkType": {
+                                                            "type": "string"
+                                                        },
+                                                        "id": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        },
+                                        "createdAt": {
+                                            "type": "string"
+                                        },
+                                        "updatedAt": {
+                                            "type": "string"
+                                        },
+                                        "environment": {
+                                            "type": "object",
+                                            "required": [
+                                                "sys"
+                                            ],
+                                            "properties": {
+                                                "sys": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "id",
+                                                        "type",
+                                                        "linkType"
+                                                    ],
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string"
+                                                        },
+                                                        "type": {
+                                                            "type": "string"
+                                                        },
+                                                        "linkType": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "revision": {
+                                            "type": "integer"
+                                        },
+                                        "contentType": {
+                                            "type": "object",
+                                            "required": [
+                                                "sys"
+                                            ],
+                                            "properties": {
+                                                "sys": {
+                                                    "type": "object",
+                                                    "required": [
+                                                        "type",
+                                                        "linkType",
+                                                        "id"
+                                                    ],
+                                                    "properties": {
+                                                        "type": {
+                                                            "type": "string"
+                                                        },
+                                                        "linkType": {
+                                                            "type": "string"
+                                                        },
+                                                        "id": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "locale": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "fields": {
+                                    "type": "object",
+                                    "required": [
+                                        "chatOrigenId",
+                                        "chatActivo"
+                                    ],
+                                    "properties": {
+                                        "chatOrigenId": {
+                                            "type": "string"
+                                        },
+                                        "chatActivo": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "error": {
+                    "type": "boolean"
+                },
+                "env": {
+                    "type": "object",
+                    "required": [
+                        "nfsUrl",
+                        "environment",
+                        "loginIdpUrl",
+                        "logoutIdpUrl",
+                        "baseUrl",
+                        "catalogUrlPrefix",
+                        "googleMapAPIKEY",
+                        "accountUrl",
+                        "accountUrlPerfil",
+                        "contentful_host",
+                        "contentful_space",
+                        "contentful_access_token",
+                        "contentful_environment",
+                        "contentful_preview",
+                        "contentful_preview_host",
+                        "contentful_preview_access_token",
+                        "urlChat"
+                    ],
+                    "properties": {
+                        "nfsUrl": {
+                            "type": "string"
+                        },
+                        "environment": {
+                            "type": "string"
+                        },
+                        "loginIdpUrl": {
+                            "type": "string"
+                        },
+                        "logoutIdpUrl": {
+                            "type": "string"
+                        },
+                        "baseUrl": {
+                            "type": "string"
+                        },
+                        "catalogUrlPrefix": {
+                            "type": "string"
+                        },
+                        "googleMapAPIKEY": {
+                            "type": "string"
+                        },
+                        "accountUrl": {
+                            "type": "string"
+                        },
+                        "accountUrlPerfil": {
+                            "type": "string"
+                        },
+                        "contentful_host": {
+                            "type": "string"
+                        },
+                        "contentful_space": {
+                            "type": "string"
+                        },
+                        "contentful_access_token": {
+                            "type": "string"
+                        },
+                        "contentful_environment": {
+                            "type": "string"
+                        },
+                        "contentful_preview": {
+                            "type": "string"
+                        },
+                        "contentful_preview_host": {
+                            "type": "string"
+                        },
+                        "contentful_preview_access_token": {
+                            "type": "string"
+                        },
+                        "urlChat": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "__N_SSP": {
+            "type": "boolean"
+        }
+    }
+}
